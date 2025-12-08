@@ -1,0 +1,96 @@
+# ===========================
+#   PYTHON BASICS
+# ===========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pickle
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+
+# UV package manager cache
+.uv/
+
+# ===========================
+#   EDITOR / IDE STUFF
+# ===========================
+
+# Zed
+.zed/
+
+# VSCode (just in case)
+.vscode/
+
+# PyCharm
+.idea/
+
+# ===========================
+#   ML / NLP PROJECT FILES
+# ===========================
+
+# HuggingFace cache
+~/.cache/huggingface/
+huggingface/
+*cache*/
+
+# PyTorch
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# TensorBoard / logs
+logs/
+runs/
+events.out.tfevents.*
+
+# ===========================
+#   DATA FILES
+# ===========================
+
+# Raw + processed data (keep dataset builder scripts)
+data/raw/
+data/processed/
+
+# If you want to commit small samples, create:
+# data/samples/   ← allowed
+!data/samples/
+
+# ===========================
+#   OUTPUTS / TEMP FILES
+# ===========================
+
+outputs/
+checkpoints/
+artifacts/
+tmp/
+temp/
+*.tmp
+
+# ===========================
+#   JUPYTER (even if you don't use them)
+# ===========================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===========================
+#   SYSTEM / MISC FILES
+# ===========================
+.DS_Store
+*.swp
+*.swo
+*~
+
+datasets-v2.tgz
+
+tmp_semeval/
