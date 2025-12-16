@@ -1,0 +1,44 @@
+{ "O": 0 ,
+  
+  "B-Appeal_to_Authority": 1,
+  "I-Appeal_to_Authority": 2,
+  
+  "B-Appeal_to_fear-prejudice": 3,
+  "I-Appeal_to_fear-prejudice": 4, 
+  
+  "B-Bandwagon,Reductio_ad_Hitlerum": 5,
+  "I-Bandwagon,Reductio_ad_Hitlerum": 6,
+
+  "B-Black-and-White_Fallacy": 7,
+  "I-Black-and-White_Fallacy": 8,
+
+  "B-Causal_Oversimplification": 9,
+  "I-Causal_Oversimplification": 10,
+
+  "B-Doubt": 11,
+  "I-Doubt": 12,
+
+  "B-Exaggeration,Minimization": 13,
+  "I-Exaggeration,Minimization": 14,
+
+  "B-Flag-Waving": 15,
+  "I-Flag-Waving": 16,
+
+  "B-Loaded_Language": 17,
+  "I-Loaded_Language": 18,
+
+  "B-Name_Calling,Labeling": 19,
+  "I-Name_Calling,Labeling": 20,
+
+  "B-Repetition": 21,
+  "I-Repetition": 22,
+
+  "B-Slogans": 23,
+  "I-Slogans": 24,
+
+  "B-Thought-terminating_Cliches": 25,
+  "I-Thought-terminating_Cliches": 26,
+
+  "B-Whataboutism,Straw_Men,Red_Herring": 27,
+  "I-Whataboutism,Straw_Men,Red_Herring": 28
+}
