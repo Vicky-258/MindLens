@@ -1,10 +1,16 @@
 from transformers import DistilBertTokenizerFast
+from Span2Bio import spans_to_bio
+
+import json
+
+with open("configs/labels.json", "r") as f:
+    label2id = json.load(f)
 
 tokenizer = DistilBertTokenizerFast.from_pretrained(
     "distilbert-base-uncased"
 )
 
-text = """These corrupt elites are destroying our country."""
+text = "These corrupt elites are destroying our country."
 
 encoding = tokenizer(
     text,
@@ -13,11 +19,13 @@ encoding = tokenizer(
     add_special_tokens=True
 )
 
-print(encoding["input_ids"])
-print(tokenizer.convert_ids_to_tokens(encoding["input_ids"]))
+spans = [
+    (6, 20, "Name_Calling,Labeling")
+]
 
-for token, (start, end) in zip(
-    tokenizer.convert_ids_to_tokens(encoding["input_ids"]),
-    encoding["offset_mapping"]
-):
-    print(f"{token:15} -> ({start}, {end}) -> '{text[start:end]}'")
+out = spans_to_bio(text, spans, tokenizer, label2id)
+
+tokens = tokenizer.convert_ids_to_tokens(out["input_ids"])
+
+for t, l, o in zip(tokens, out["labels"], out["offsets"]):
+    print(f"{t:12} {l:35} {o}")
