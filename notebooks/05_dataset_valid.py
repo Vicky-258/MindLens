@@ -93,3 +93,20 @@ for t, l in zip(tokens, labels):
     if l != "O":
         print(f"{t:15} {l}")
         
+# %%
+
+import json
+from collections import Counter
+
+label_counts = Counter()
+
+with open("../data/processed/span_ner.jsonl") as f:
+    for line in f:
+        sample = json.loads(line)
+        label_counts.update(sample["labels"])
+
+# map id → label name
+id2label = {v: k for k, v in label2id.items()}
+
+for lid, count in label_counts.most_common():
+    print(f"{id2label[lid]:40s} {count}")
