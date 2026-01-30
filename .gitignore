@@ -1,96 +1,100 @@
-# ===========================
-#   PYTHON BASICS
-# ===========================
+############################
+# 🐍 Python
+############################
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.pdb
-*.pkl
-*.pickle
 *.so
+*.egg-info/
+.eggs/
 
-# Virtual environments
+############################
+# 📦 Virtual Environments
+############################
 .venv/
 venv/
 env/
 ENV/
-*.egg-info/
-.eggs/
 
-# UV package manager cache
-.uv/
+############################
+# 🧪 Notebooks & Checkpoints
+############################
+.ipynb_checkpoints/
 
-# ===========================
-#   EDITOR / IDE STUFF
-# ===========================
+############################
+# 📊 Data (DO NOT COMMIT)
+############################
+data/
+mindlens_data/
+tmp_semeval/
+datasets-v2.tgz
+mindlens_data.zip
 
-# Zed
-.zed/
-
-# VSCode (just in case)
-.vscode/
-
-# PyCharm
-.idea/
-
-# ===========================
-#   ML / NLP PROJECT FILES
-# ===========================
-
-# HuggingFace cache
-~/.cache/huggingface/
-huggingface/
-*cache*/
-
-# PyTorch
-*.pt
-*.pth
-*.bin
-*.ckpt
-
-# TensorBoard / logs
-logs/
-runs/
-events.out.tfevents.*
-
-# ===========================
-#   DATA FILES
-# ===========================
-
-# Raw + processed data (keep dataset builder scripts)
-data/raw/
-data/processed/
-
-# If you want to commit small samples, create:
-# data/samples/   ← allowed
-!data/samples/
-
-# ===========================
-#   OUTPUTS / TEMP FILES
-# ===========================
-
-outputs/
+############################
+# 🧠 Models & Artifacts
+############################
+Models/
 checkpoints/
 artifacts/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.joblib
+*.pkl
+*.onnx
+
+############################
+# 📈 Experiment Tracking
+############################
+mlruns/
+wandb/
+tensorboard/
+tb_logs/
+
+############################
+# 📝 Logs & Temp
+############################
+logs/
+*.log
 tmp/
 temp/
-*.tmp
 
-# ===========================
-#   JUPYTER (even if you don't use them)
-# ===========================
-.ipynb_checkpoints/
-*.ipynb
-
-# ===========================
-#   SYSTEM / MISC FILES
-# ===========================
-.DS_Store
+############################
+# ⚙️ IDE / Editor Noise
+############################
+.vscode/
+.idea/
 *.swp
 *.swo
-*~
+*.bak
 
-datasets-v2.tgz
+############################
+# 🧰 OS
+############################
+.DS_Store
+Thumbs.db
 
-tmp_semeval/
+############################
+# 🔐 Secrets & Env
+############################
+.env
+.env.*
+secrets/
+credentials.json
+
+############################
+# 🧪 Build / Cache
+############################
+.cache/
+pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+############################
+# 🗃️ Misc
+############################
+*.tar
+*.tgz
+*.zip
